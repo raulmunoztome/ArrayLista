@@ -38,7 +38,7 @@ public class ArrayLista {
 		}
 		System.out.println();
 		System.out.println("Tamañao del array: "+colors3.length);
-	
+		//
 	
 	}
 	
