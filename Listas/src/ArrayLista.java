@@ -9,6 +9,10 @@ public class ArrayLista {
 		
 		colors.add("Verde");
 		colors.add("Amarillo");
+		colors.add("Negro");
+		//borramos por indice y por valor
+		colors.remove(colors.get(colors.size()-1));
+		colors.remove("Amarillo");
 	
 		for(String elemento : colors) {
 			System.out.print(elemento+", ");
@@ -20,6 +24,10 @@ public class ArrayLista {
 		colors2.add("Fosforito");
 		colors2.add("brilli brilli");
 		colors2.add("Rosa");
+		//Borro por posicion
+		colors2.remove(colors2.size()-1);
+		//Borro por valor:
+		colors2.remove("Fosforito");
 		
 		for(String elemento2 : colors2) {
 			System.out.print(elemento2+", ");
@@ -29,11 +37,14 @@ public class ArrayLista {
 		
 		String[] colors3 = new String[10];
 		
-		colors3[0] = "Rojo PSOE";
-		colors3[1] = "Verde esperanza";
+		int pos = 0;
+		
+		colors3[pos] = "Rojo PSOE";
+		++pos;
+		colors3[pos] = "Verde esperanza";
 		
 		for(String element : colors3) {
-			System.out.print(element+", ");
+			if(element != null) System.out.print(element+", ");
 
 		}
 		System.out.println();
